@@ -23,3 +23,43 @@ jQuery(document).ready(function() {
       setHeight();
     });
 });
+
+jQuery('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: true,
+  dots: false,
+  asNavFor: '.caption',
+  responsive: [   
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }   
+  ]
+ });
+ jQuery('.caption').slick({
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+  dots: false,
+  asNavFor: '.slider',
+  responsive: [   
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true
+      }
+    }   
+  ]
+ });

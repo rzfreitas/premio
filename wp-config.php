@@ -1,7 +1,4 @@
 <?php
-/** Enable W3 Total Cache */
-define('WP_CACHE', true); // Added by W3 Total Cache
-
 /**
  * As configurações básicas do WordPress
  *
@@ -24,13 +21,13 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 // ** Configurações do MySQL - Você pode pegar estas informações
 // com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'verdegha_premio');
+define('DB_NAME', 'premio');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'verdegha_new');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '@VG_Gh@1@2019');
+define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
 define('DB_HOST', 'localhost');

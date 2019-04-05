@@ -1,8 +1,7 @@
 # BEGIN W3TC Page Cache cache
 Options -MultiViews
 <Files ~ "\.(html|html_gzip|html_br|xml|xml_gzip|xml_br)$">
-  Order Allow,Deny
-  Allow from all
+  Require all granted
 </Files>
 EnableSendfile Off 
 AddDefaultCharset UTF-8
@@ -22,7 +21,7 @@ FileETag MTime Size
     ExpiresByType text/html M3600
 </IfModule>
 <IfModule mod_headers.c>
-    Header set X-Pingback "https://www.verdeghaia.com.br/premio/xmlrpc.php"
+    Header set X-Pingback "http://localhost/sites/premio/xmlrpc.php"
     Header set X-Powered-By "W3 Total Cache/0.9.7.2"
     Header set Vary "Accept-Encoding, Cookie"
     Header set Pragma "public"

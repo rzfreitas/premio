@@ -1,8 +1,4 @@
-<?php
-/*
-Template Name: Home
-*/
-?>
+<?php /* Template Name: Home */ ?>
 
 <?php get_header(); ?>
 
@@ -17,221 +13,43 @@ Template Name: Home
 		background-size: cover;
 		height: calc(100vh - 100px); ">
 		<div class="container v-center">
-			<div class="">		
-				<div class="content-banner box-logo">
-					<?php $logo_p = get_field('logo_principal');
-					if( !empty($logo_p) ): ?>
-						<img src="<?php echo $logo_p['url']; ?>" alt="<?php echo $logo_p['alt']; ?>" />
-					<?php endif; ?>					
-				</div>
+			<div class="box-logo">
+				<?php $logo_p = get_field('logo_principal');
+				if( !empty($logo_p) ): ?>
+					<img src="<?php echo $logo_p['url']; ?>" alt="<?php echo $logo_p['alt']; ?>" />
+				<?php endif; ?>					
 			</div>
+
+			<div class="text-center p-t-50">
+				<h2 class="f-branca"><?php the_field('data_local_evento'); ?></h2>
+			</div>
+
+			<div class="p-t-50">
+				<div id="countdown"></div>
+			</div>			
 		</div>	
 	<?php endif; ?>
 </div>
 </section>
 
 <section>
-	<div class="container p-t-50 p-b-50 p-t-c p-b-c crono text-center">
-		<div class="data-evento p-t-30">
-			Próxima Edição
+	<div class="p-relative">
+		<img class="img-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-left.png">
+		<div class="p-relative container p-t-70 p-b-100 p-t-c p-b-c">			
+			<div class="box-opac">
+				<h1><?php the_field('subtitulo_1'); ?></h1>
+				<div>
+					<span class="f-cinza"><?php the_field('conteudo_1'); ?></span>
+				</div>				
+				<div class="p-t-30 text-center">
+					<?php the_field('video_1'); ?>
+				</div>
+			</div>
 		</div>
-		<div class="hidden-md-down clock-builder-output p-t-50 m-l-20"></div>
-		<div class="hidden-md-up clock-builder-small-output p-t-c p-b-c crono-mob"></div>
-		<!-- <div class="text-center data-evento"><?php the_field('data_evento'); ?></div>
-		<div class="text-center f-azul"><strong><?php the_field('local_horario'); ?></strong></div> -->
+		<img class="img-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-right.png">
 	</div>
 </section>
 
-<section>
-<div class="banner">
-	<?php $img2 = get_field('imgs_fundo');
-	if( ($img2) ): ?>
-		<div style="background: url(<?php echo $img2['img_2']['url']; ?>) no-repeat center center fixed;    
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		height: auto;">
-		<div class="p-t-50 p-b-50 p-t-c p-b-c" id="s1">
-			<div class="container vid">
-				<h2 class="f-branca">Confira os melhores momentos do Prêmio:</h2><br>
-				<iframe width="680" height="315" src="https://www.youtube.com/embed/N6SrPH6z7xY" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	<?php endif; ?>
-</div>
-</section>
-
-<section>
-	<div class="container-fluid p-t-50 p-b-50 p-t-c p-b-c">
-		<div class="container">
-			<h2 class="text-center">GANHADORES DA III EDIÇÃO:</h2>	
-			<div class="caption p-t-30">
-				<div></div><div class="capt"><h2>Qualidade</h2></div><div></div>		
-				<div></div><div class="capt"><h2>Saúde e Segurança</h2></div><div></div>				
-				<div></div><div class="capt"><h2>Meio Ambiente</h2></div><div></div>
-				<div></div><div class="capt"><h2>Responsabilidade Social</h2></div><div></div>
-				<div></div><div class="capt"><h2>Segurança de Alimentos</h2></div><div></div>				
-				<div></div><div class="capt"><h2>Energia</h2></div><div></div>				
-				<div></div><div class="capt"><h2>Integrado</h2></div><div></div>				
-				<div></div><div class="capt"><h2>Gestão de Fornecedores</h2></div><div></div>
-			</div>
-			<div class="slider">
-				
-				<?php if( have_rows('win_qualidade') ): ?>
-					<?php while( have_rows('win_qualidade') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_qualidade');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_quali'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-				<!-- -->
-
-				<?php if( have_rows('win_ss') ): ?>
-					<?php while( have_rows('win_ss') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_ss');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_ss'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-				<!-- -->
-
-				<?php if( have_rows('win_meioa') ): ?>
-					<?php while( have_rows('win_meioa') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_meioa');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_ma'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-				<!-- -->
-
-				<?php if( have_rows('win_rs') ): ?>
-					<?php while( have_rows('win_rs') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_rs');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_rs'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-				<!-- -->
-
-				<?php if( have_rows('win_sa') ): ?>
-					<?php while( have_rows('win_sa') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_sa');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_sa'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-				<!-- -->
-
-				<?php if( have_rows('win_energ') ): ?>
-					<?php while( have_rows('win_energ') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_energ');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_energ'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-				<!-- -->
-
-				<?php if( have_rows('win_int') ): ?>
-					<?php while( have_rows('win_int') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_int');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_int'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-				<!-- -->
-
-				<?php if( have_rows('win_gf') ): ?>
-					<?php while( have_rows('win_gf') ): the_row();
-						// vars
-						$logo = get_sub_field('logo_win_gf');
-						$rank = get_sub_field('ranking');
-						$name = get_sub_field('name_win_gf'); ?>
-
-						<div class="slick-item">
-							<h3><?php echo $rank; ?></h3>
-							<figure>
-								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-								<figcaption><?php echo $name; ?></figcaption>
-							</figure>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?>
-
-			</div>
-		</div>
-	</div>
-</section>
 
 <section>
 	<div class="container-fluid p-t-30 p-b-30 p-t-c p-b-c bg-gray text-center">
@@ -342,91 +160,7 @@ Template Name: Home
 			<div class="col quadrinho">
 				<?php the_field('quadrinho_4'); ?>
 			</div>
-		</div>
-		<!-- <div class="text-center p-t-50 p-t-c">
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#largeShoes">CLIQUE AQUI E VEJA OS INDICADOS
-		</button>
-		</div>
-		Button trigger modal -->
-		
-	</div>
-</section>
-
-<section>
-	<div class="bg-marinho p-t-70 p-b-70 p-t-c p-b-c">
-		<div class="container">
-			<h2>GALERIA DE FOTOS EDIÇÕES ANTERIORES</h2>
-			<div class="row p-t-25">
-				<div class="col-gallery col-12 col-md-4">
-					<h3>3ª Edição</h3>
-					<?php $images = get_field('galeria_3');
-					if( $images ): ?>
-					    <div class="photos">
-				        	<?php foreach( $images as $image ): ?>
-				            	<a data-fancybox="gallery3" href="<?php echo $image['url']; ?>">
-				            		<img class="grow" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-				            	</a>
-				        	<?php endforeach; ?>
-					    </div>
-					<?php endif; wp_reset_postdata(); ?>
-					<i class="fa fa-camera" aria-hidden="true"></i>
-				</div>
-
-				<div class="col-gallery col-12 col-md-4">
-					<h3>2ª Edição</h3>
-					<?php $images = get_field('galeria_2');
-					if( $images ): ?>
-					    <div class="photos">
-				        	<?php foreach( $images as $image ): ?>
-				            	<a data-fancybox="gallery2" href="<?php echo $image['url']; ?>">
-				            		<img class="grow" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-				            	</a>
-				        	<?php endforeach; ?>
-					    </div>					    
-					<?php endif; wp_reset_postdata(); ?>
-					<i class="fa fa-camera" aria-hidden="true"></i>
-				</div>
-
-				<div class="col-gallery col-12 col-md-4">
-					<h3>1ª Edição</h3>
-					<?php $images = get_field('galeria_1');
-					if( $images ): ?>
-					    <div class="photos">
-				        	<?php foreach( $images as $image ): ?>
-				            	<a data-fancybox="gallery1" href="<?php echo $image['url']; ?>">
-				            		<img class="grow" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-				            	</a>
-				        	<?php endforeach; ?>
-					    </div>
-					<?php endif; wp_reset_postdata(); ?>
-					<i class="fa fa-camera" aria-hidden="true"></i>
-				</div>				
-			</div>		
-		</div>
-		
-		<div class="container p-t-70 p-t-c">
-			<h2>Assista o vídeo da II Edição do Prêmio</h2>
-		</div>
-		<div class="container text-center p-t-c">
-			<iframe width="560" height="325" src="https://www.youtube.com/embed/pVCazkkI5BU" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="bg-gray">
-		<div class="container p-t-50 p-b-50 depoimentos p-t-c p-b-c-">
-			<h2>DEPOIMENTOS</h2>
-			<?php if(get_field('depoimentos')): ?>
-				<div class="depoimentos-slick">					
-					<?php while(has_sub_field('depoimentos')): ?>
-						<div class="depoimentos-item"><em><?php the_sub_field('relato'); ?></em>
-							<strong><?php the_sub_field('relator'); ?></strong>
-						</div>
-					<?php endwhile; ?>
-				</div>				
-			<?php endif; ?>
-		</div>
+		</div>		
 	</div>
 </section>
 
@@ -446,27 +180,5 @@ Template Name: Home
 		</div>
 	</div>
 </section>
-
-<!-- The modal 
-<div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
-	<div class="modal-dialog modal-xs">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-					<h4 class="modal-title" id="modalLabelLarge">Indicados ao Prêmio Compliance Brasil 2017</h4>
-				</div>
-
-				<div class="modal-body hidden-md-down">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/Indicados-premio-compliance-2017.png" alt="Indicados ao Prêmio Compliance Brasil 2017"/>
-				</div>
-				<div class="modal-body hidden-md-up">
-					<a href="<?php echo get_template_directory_uri(); ?>/assets/images/home/Indicados-premio-compliance-2017.png"><button type="button" class="btn btn-primary" target="_blank">CLIQUE PARA VISUALIZAR</button></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>-->
 
 <?php get_footer(); ?>
