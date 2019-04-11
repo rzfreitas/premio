@@ -17,12 +17,11 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="countdown"
-  document.getElementById("countdown").innerHTML = 
-  "<div> <div class='period'>dias</div> <div class='n-count'>" + days + "</div></div> <div><div class='period'>horas</div> <div class='n-count'>" + hours + "</div></div> <div><div class='period'>minutos</div><div class='n-count'>" + minutes + "</div></div> <div><div class='period'>segundos</div>" + seconds + "</div>";
+  document.getElementById("countdown").innerHTML = "<div> <div class='period'>dias</div> <div class='n-count'>" + days + "</div></div> <div><div class='period'>horas</div> <div class='n-count'>" + hours + "</div></div> <div><div class='period'>minutos</div><div class='n-count'>" + minutes + "</div></div> <div><div class='period'>segundos</div>" + seconds + "</div>";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);

@@ -3,18 +3,10 @@
 <?php get_header(); ?>
 
 <section>
-<div class="banner">
-	<?php $img1 = get_field('imgs_fundo');
-	if( ($img1) ): ?>
-		<div style="background: url(<?php echo $img1['img_1']['url']; ?>) no-repeat center center fixed;    
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		height: calc(100vh - 100px); ">
-		<div class="container v-center">
+	<div class="banner-home">
+		<div class="container">
 			<div class="box-logo">
-				<?php $logo_p = get_field('logo_principal');
+				<?php $logo_p = get_field('logo_banner');
 				if( !empty($logo_p) ): ?>
 					<img src="<?php echo $logo_p['url']; ?>" alt="<?php echo $logo_p['alt']; ?>" />
 				<?php endif; ?>					
@@ -27,9 +19,8 @@
 			<div class="p-t-50">
 				<div id="countdown"></div>
 			</div>			
-		</div>	
-	<?php endif; ?>
-</div>
+		</div>
+	</div>
 </section>
 
 <section>
@@ -50,12 +41,146 @@
 	</div>
 </section>
 
-
 <section>
-	<div class="container-fluid p-t-30 p-b-30 p-t-c p-b-c bg-gray text-center">
-		<span class="revista">Baixe agora a revista do III Prêmio Compliance Brasil e tenha acesso aos cases das vencedoras desta edição</span><a class="btn-d btn-gray" href="https://www.verdeghaia.com.br/premio/Revista-Compliance-Brasil-2017.pdf" download>BAIXAR</a>
+	<div class="container p-t-100 p-b-100 p-t-c p-b-c">
+		<div class="timeline">
+			<div class="timeline-event">O EVENTO</div>
+			<div class="timeline-event">19 horas <br> <span class="f-purple">Welcome drink</span></div>
+			<div class="timeline-event">20 horas <br> <span class="f-purple">Compliance Brasil Talks</span>
+				<div class="row d-flex p-t-50">
+					<div class="col">
+						<div class="box-talk">
+							<div class="d-flex align-c">
+								<div class="">
+									<?php $image1 = get_field('img_talk_1');
+									if( !empty($image1) ): ?>
+										<img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+									<?php endif; ?>
+								</div>
+								<div class="m-l-25">
+									Talk<br>
+									<span class="f-purple"><?php the_field('talk_1'); ?></span>
+								</div>
+							</div>							
+							<?php the_field('desc_talk_1'); ?>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box-talk">
+							<div class="d-flex align-c">
+								<div>
+									<?php $image2 = get_field('img_talk_2');
+									if( !empty($image2) ): ?>
+										<img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+									<?php endif; ?>
+								</div>
+								<div class="m-l-25">
+									Talk<br>
+									<span class="f-purple"><?php the_field('talk_2'); ?></span>
+								</div>
+							</div>
+							<p><?php the_field('desc_talk_2'); ?></p>
+						</div>
+					</div>
+				</div>
+				<div class="row d-flex p-t-50">
+					<div class="col">
+						<div class="box-talk">
+							<div class="d-flex align-c">
+								<div>
+									<?php $image3 = get_field('img_talk_3');
+									if( !empty($image3) ): ?>
+										<img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
+									<?php endif; ?>								
+								</div>
+								<div class="m-l-25">
+									Talk<br>
+									<span class="f-purple"><?php the_field('talk_3'); ?></span>
+									<?php the_field('desc_talk_3'); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box-talk">
+							<div class="d-flex align-c">
+								<div>
+									<?php $image4 = get_field('img_talk_4');
+									if( !empty($image4) ): ?>
+										<img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" />
+									<?php endif; ?>								
+								</div>
+								<div class="m-l-25">
+									Talk<br>
+									<span class="f-purple"><?php the_field('talk_4'); ?></span>
+									<?php the_field('desc_talk_4'); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-event">21 horas <br> <span class="f-purple">Premiação</span></div>
+			<div class="timeline-event">21:30 horas <br> <span class="f-purple">Coquetel</span>
+				<p class="p-t-30">Comandado pelo Buffet Rullus, melhor e mais premiado de Minas Gerais</p>
+				<p>Música ao vivo para descontrair, em um ambiente propício para um bom networking, troca de ideias e novas experiências.  </p>
+				<strong><p>Show com a Banda Zero</p></strong>
+			</div>
+			<div class="timeline-event">23:30 horas - <span class="f-purple">Encerramento</span></div>
+		</div>
 	</div>
 </section>
+
+
+<section>
+	<div class="p-t-30 p-b-30 p-t-c p-b-c bg-gray">
+		<div class="container">
+			<div class="row align-c">
+				<div class="col-12 col-md-9">
+					<div class="d-flex align-c">
+						<div class="m-r-25">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/frame.png" alt="prêmio compliance ao vivo" />
+						</div>
+						<div>
+							<h3>TRANSMISSÃO AO VIVO DO EVENTO</h3>
+							<h4>Acompanhe pelas redes sociais</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3 p-t-c">
+					<ul class="list-socials">
+						<li><i class="fa fa-facebook"></i></li>
+						<li><i class="fa fa-instagram"></i></li>
+						<li><i class="fa fa-twitter"></i></li>
+						<li><i class="fa fa-youtube"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="bg-map">
+		<div class="container p-t-100 p-b-100 p-t-c p-b-c">
+			<div class="row align-c">
+				<div class="col-12 col-md-3">
+					<h2>LOCAL</h2>
+					<h3>SICEPOT-MG</h3>
+					<p>Sindicato da Indústria da Construção Pesada no Estado de MG</p>
+					<p>Avenida Barão Homem de Melo, nº 3090 – Belo Horizonte</p>
+				</div>
+				<div class="col-12 col-md-9 text-right">
+					<div class="box-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.0930403348602!2d-43.96617438515629!3d-19.962589086585425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69be54352ff39%3A0xe963104455c0d9c2!2sSindicato+da+Ind%C3%BAstria+da+Constru%C3%A7%C3%A3o+Pesada+no+Estado+de+MG!5e0!3m2!1spt-BR!2sbr!4v1554820112689!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border: 2px solid #E5E5E5; box-sizing: border-box;" allowfullscreen></iframe>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<?php get_template_part('template-parts/content' , 'patrocinadores'); ?>
 
 <section>
 <div class="f-branca">
@@ -76,109 +201,6 @@
 		</div>
 	<?php endif; ?>
 </div>
-</section>
-
-<section>
-	<div class="container p-t-50 p-b-50 p-t-c p-b-c">
-		<h2>QUEM PODE PARTICIPAR</h2>
-		<p>Todas as organizações que realizam o monitoramento de seu Desempenho Legal através da metodologia descrita nesse edital utilizando o SOGI – Software de Gestão Integrada. O IV Prêmio Compliance Brasil é realizado apenas no Brasil, não sendo concorrentes empresas de outras nacionalidades que utilizam o sistema.</p>
-	</div>
-</section>
-
-<section>
-	<div class="container-fluid bg-marinho" id="s3">
-		<div class="container p-t-50 p-b-50 p-t-c p-b-c categorias">
-			<h2><?php the_field('subtitulo_3'); ?></h2>
-			<?php the_field('conteudo_3'); ?>
-
-			<?php if( have_rows('categorias') ): ?>						
-				<ul>
-					<?php while( have_rows('categorias') ): the_row(); 				  
-						// vars
-						$image = get_sub_field('img_cat');				
-						$content = get_sub_field('categoria');
-						?>
-						<li>
-							<img src="<?php echo $image['url']; ?>" alt="Categorias prêmio compliance Brasil" />
-							<h3> <?php echo $content ?></h3>
-						</li>
-					<?php endwhile; ?>
-				</ul>			
-			<?php endif; ?>
-
-			<!-- <div class="w-block">
-				<h2><?php the_field('subtitulo_4'); ?></h2>
-				<?php the_field('conteudo_4'); ?>
-				<div class="row equal">
-					<div class="col quadrinho m-b-c">
-						<?php the_field('quadrinho_1'); ?>
-					</div>
-					<div class="col quadrinho">
-						<?php the_field('quadrinho_1'); ?>
-					</div>
-				</div>				
-			</div>
-			<div class="p-t-50 p-t-c">
-				<?php the_field('conteudo_5'); ?>
-			</div> -->
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="container-fluid bg-cinza" id="s4">
-		<div class="container p-t-50 p-b-50 p-t-c p-b-c">
-			<h2><?php the_field('subtitulo_5'); ?></h2>
-			<?php the_field('conteudo_6'); ?>
-			<div class="w-block f-preta">
-				<?php the_field('conteudo_7'); ?>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-<div class="bg-marinho">
-	<div id="s5">
-		<div class="container p-t-50 p-b-50 p-t-c p-b-c f-branca">
-			<h2><?php the_field('subtitulo_6'); ?></h2>
-			<?php the_field('conteudo_8'); ?>			
-		</div>
-	</div>	
-</div>
-</section>
-
-<section>
-	<div class="container p-t-50 p-b-50 p-t-c p-b-c" id="s6">
-		<h2><?php the_field('subtitulo_7'); ?></h2>
-		<?php the_field('conteudo_9'); ?>			
-	
-		<div class="row equal">
-			<div class="col quadrinho">
-				<?php the_field('quadrinho_3'); ?>
-			</div>
-			<div class="col quadrinho">
-				<?php the_field('quadrinho_4'); ?>
-			</div>
-		</div>		
-	</div>
-</section>
-
-<section>
-	<div class="container-fluid" id="s7">
-		<div class="container p-t-50 p-b-50 p-t-c p-b-c">
-			<div class="row equal text-center">
-				<div class="col">
-					<h2>REALIZAÇÃO</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo-vg.png" alt="verde ghaia" />
-				</div>
-				<div class="col">					
-					<h2>APOIO</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/abnt.png" alt="abnt" />					
-				</div>
-			</div>
-		</div>
-	</div>
 </section>
 
 <?php get_footer(); ?>

@@ -24,44 +24,46 @@
 <div id="main" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'premio-compliance' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="row menu-top">
-			<div class="col-9 col-md-3">
-				<div class="site-branding">					
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php $logo_p = get_field('logo_principal');
-						if( !empty($logo_p) ): ?>
-							<img src="<?php echo $logo_p['url']; ?>" alt="<?php echo $logo_p['alt']; ?>" />
-						<?php endif; ?>
-					</a>
-				</div><!-- .site-branding -->
-			</div>
-			
-			<div class="col-3 col-md-9">
-				<nav id="site-navigation" class="center main-navigation">						
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						) );
-					?>						
-				</nav><!-- #site-navigation -->
+	<header id="masthead" class="site-header menu-top">
+		<div class="container center">
+			<div class="row">
+				<div class="col-9 col-md-3 b-r-img">
+					<div class="site-branding">					
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-premio-compliance-2019.png" alt="prêmio compliance 2019">
+						</a>
+					</div><!-- .site-branding -->
+				</div>
 				
-				<div class="d-block d-sm-none menu-sm">
-					<span onclick="openNav()"><i class="fa fa-bars"></i></span>
-					<div id="mySidenav" class="sidenav">
-						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>						
+				<div class="col-3 col-md-9">
+					<nav id="site-navigation" class="main-navigation">						
 						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						) );
+							wp_nav_menu( array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu',
+							) );
 						?>						
+					</nav><!-- #site-navigation -->
+					
+					<div class="d-block d-sm-none menu-sm">
+						<span onclick="openNav()"><i class="fa fa-bars"></i></span>						
 					</div>
-				</div>					
+				</div>
 			</div>
 		</div>
 	</header><!-- #masthead -->
 	<div class="fix-height"></div>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>			
+		<div class="p-t-c">
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+			?>
+		</div>		
+	</div>
 
 	<div id="content" class="site-content">
