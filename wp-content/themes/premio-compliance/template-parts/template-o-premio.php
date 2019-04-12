@@ -24,8 +24,8 @@
 <section>
 	<div class="container-fluid bg-marinho" id="s3">
 		<div class="container p-t-50 p-b-50 p-t-c p-b-c categorias">
-			<h2><?php the_field('subtitulo_3'); ?></h2>
-			<?php the_field('conteudo_3'); ?>
+			<h2><?php the_field('subtitulo_1'); ?></h2>
+			<?php the_field('conteudo_2'); ?>
 
 			<?php if( have_rows('categorias') ): ?>						
 				<ul>
@@ -45,13 +45,26 @@
 	</div>
 </section>
 
+<section>
+	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c">
+		<img class="img-right-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-right-3.png" alt="prêmio compliance" />
+		<div class="container" id="s6">
+			<div class="box-opac-round">
+				<h2><?php the_field('subtitulo_3'); ?></h2>
+				<?php the_field('conteudo_3'); ?>
+			</div>	
+		</div>
+		<img class="img-left-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-left-3.png" alt="prêmio compliance" />
+	</div>	
+</section>
+
 <!-- curadoria -->
 <section>
 <div class="bg-marinho">
 	<div id="s5">
 		<div class="container p-t-50 p-b-50 p-t-c p-b-c f-branca">
-			<h2><?php the_field('subtitulo_1'); ?></h2>
-			<?php the_field('conteudo_1'); ?>			
+			<h2><?php the_field('subtitulo_4'); ?></h2>
+			<?php the_field('conteudo_4'); ?>			
 		</div>
 	</div>
 </div>
@@ -61,14 +74,16 @@
 	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c">
 		<div class="container" id="s6">
 			<div class="box-opac-round">
-				<h2><?php the_field('subtitulo_2'); ?></h2>
-				<?php the_field('conteudo_2'); ?>
+				<h2><?php the_field('subtitulo_5'); ?></h2>
+				<?php the_field('conteudo_5'); ?>
 			
 				<div class="row equal p-t-50">
 					<div class="col quadrinho">
+						<h2>1º lugar</h2>
 						<?php the_field('quadrinho_1'); ?>
 					</div>
 					<div class="col quadrinho">
+						<h2>2º e 3º lugar</h2>
 						<?php the_field('quadrinho_2'); ?>
 					</div>
 				</div>

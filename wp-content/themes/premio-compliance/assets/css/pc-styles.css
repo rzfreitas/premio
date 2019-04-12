@@ -276,6 +276,7 @@ ul, ol {
     margin: 0 10px;
     text-align: center;
     border: 2px solid #8C2F85;
+    border-radius: 32px;
 }
 .quadrinho h2{
     color: #8C2F85;
@@ -690,6 +691,18 @@ ul.list-socials li:hover{
     top: 0;
     right: 0;
     height: 600px;
+}
+.img-left-3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 900px;
+}
+.img-right-3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 900px;
 }
 .btn-vinho{
     display: inline-block;
