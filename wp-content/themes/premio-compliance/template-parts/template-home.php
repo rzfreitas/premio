@@ -96,9 +96,9 @@
 								<div class="m-l-25">
 									Talk<br>
 									<span class="f-purple"><?php the_field('talk_3'); ?></span>
-									<p><?php the_field('desc_talk_3'); ?></p>
 								</div>
 							</div>
+							<p><?php the_field('desc_talk_3'); ?></p>
 						</div>
 					</div>
 					<div class="col">
@@ -113,9 +113,9 @@
 								<div class="m-l-25">
 									Talk<br>
 									<span class="f-purple"><?php the_field('talk_4'); ?></span>
-									<p><?php the_field('desc_talk_4'); ?></p>
 								</div>
 							</div>
+							<p><?php the_field('desc_talk_4'); ?></p>
 						</div>
 					</div>
 				</div>
