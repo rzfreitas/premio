@@ -3,6 +3,15 @@
 <?php get_header(); ?>
 
 <section>
+	<div class="nav-scroll">
+		<a href="#target1" class="scroll_to">Categorias</a>
+		<a href="#target2" class="scroll_to">Medotologia</a>
+		<a href="#target3" class="scroll_to">Curadoria</a>
+		<a href="#target4" class="scroll_to">Resultados</a>
+	</div>
+</section>
+
+<section>
 	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c">
 		<img class="img-right-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-right-2.png" alt="prêmio compliance" />
 		<div class="container">
@@ -22,7 +31,7 @@
 
 <!-- categorias -->
 <section>
-	<div class="container-fluid bg-marinho" id="s3">
+	<div class="container-fluid bg-marinho" id="target1">
 		<div class="container p-t-50 p-b-50 p-t-c p-b-c categorias">
 			<h2><?php the_field('subtitulo_1'); ?></h2>
 			<?php the_field('conteudo_2'); ?>
@@ -46,7 +55,7 @@
 </section>
 
 <section>
-	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c">
+	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c" id="target2">
 		<img class="img-right-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-right-3.png" alt="prêmio compliance" />
 		<div class="container" id="s6">
 			<div class="box-opac-round">
@@ -62,7 +71,7 @@
 <section>
 <div class="bg-marinho">
 	<div id="s5">
-		<div class="container p-t-50 p-b-50 p-t-c p-b-c f-branca">
+		<div class="container p-t-50 p-b-50 p-t-c p-b-c f-branca" id="target3">
 			<h2><?php the_field('subtitulo_4'); ?></h2>
 			<?php the_field('conteudo_4'); ?>			
 		</div>
@@ -71,8 +80,8 @@
 </section>
 
 <section>
-	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c">
-		<div class="container" id="s6">
+	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c" id="target4">
+		<div class="container">
 			<div class="box-opac-round">
 				<h2><?php the_field('subtitulo_5'); ?></h2>
 				<?php the_field('conteudo_5'); ?>

@@ -3,7 +3,15 @@
 <?php get_header(); ?>
 
 <section>
-	<div class="bg-vencedores">
+	<div class="nav-scroll">
+		<a href="#target1" class="scroll_to">Vencedores</a>
+		<a href="#target2" class="scroll_to">Galerias de fotos</a>
+		<a href="#target3" class="scroll_to">Vídeos</a>
+	</div>
+</section>
+
+<section>
+	<div class="bg-vencedores" id="target1">
 		<div class="container center p-t-100 p-b-100 p-t-c p-b-c">			
 			<h1 class="text-right">Conheça os todos os <br> vencedores do Prêmio <br> Compliance Brasil </h1>
 			<div class="box-sliders-round">
@@ -176,7 +184,7 @@
 
 
 <section>
-	<div class="bg-marinho p-t-70 p-b-70 p-t-c p-b-c">
+	<div class="bg-marinho p-t-70 p-b-70 p-t-c p-b-c" id="target2">
 		<div class="container">
 			<h2 class="h-bordered"><i class="fa fa-camera" aria-hidden="true"></i> Galeria de fotos</h2>
 			<div class="row p-t-50 p-l-15">
@@ -226,7 +234,7 @@
 			</div>		
 		</div>
 		
-		<div class="container p-t-70 p-t-c">
+		<div class="container p-t-70 p-t-c" id="target4">
 			<h2 class="h-bordered"><i class="fa fa-play" aria-hidden="true"></i> Videos</h2>
 		</div>
 		<div class="container p-t-c">

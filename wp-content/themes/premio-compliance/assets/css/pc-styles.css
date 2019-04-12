@@ -670,6 +670,30 @@ ul.list-socials li:hover{
 }
 /* / */
 
+/* Scroll nav */
+.nav-scroll{
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+.nav-scroll a{
+    color: #767676;
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+.nav-scroll a:before{
+    content: '\f111';
+    position: absolute;
+    left: 0px;
+    font-family: FontAwesome;
+    font-size: 10px;
+    margin-top: 4px;
+}
+/* / */
+
 /* O premio */
 .box-opac-round{
     background: rgba(255, 255, 255, 0.9);
