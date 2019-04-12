@@ -23,8 +23,10 @@ get_header(); ?>
 					
 				</div>
 				<div class="col">
-					<div class="form-contato">
-						<?php echo do_shortcode('[contact-form-7 id="380" title="Contato"]'); ?>
+					<div class="form-contato">						
+						<?php while (have_posts()) : the_post(); ?>
+						    <?php the_content(); ?>
+						<?php endwhile; ?>
 					</div>
 				</div>
 			</div>
