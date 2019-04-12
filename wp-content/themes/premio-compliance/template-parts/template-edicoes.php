@@ -3,14 +3,6 @@
 <?php get_header(); ?>
 
 <section>
-	<div class="nav-scroll">
-		<a href="#target1" class="scroll_to">Vencedores</a>
-		<a href="#target2" class="scroll_to">Galerias de fotos</a>
-		<a href="#target3" class="scroll_to">Vídeos</a>
-	</div>
-</section>
-
-<section>
 	<div class="bg-vencedores" id="target1">
 		<div class="container center p-t-100 p-b-100 p-t-c p-b-c">			
 			<h1 class="text-right">Conheça os todos os <br> vencedores do Prêmio <br> Compliance Brasil </h1>

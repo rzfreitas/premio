@@ -50,9 +50,9 @@ jQuery('.slider').slick({
   ]
  });
 
-jQuery('.scroll_to').click(function(e){
-    var jump = jQuery(this).attr('href');
-    var new_position = jQuery(jump).offset();
-    jQuery('html, body').stop().animate({ scrollTop: new_position.top }, 1000);
-    e.preventDefault();
-});
+// jQuery('.scroll_to').click(function(e){
+//     var jump = jQuery(this).attr('href');
+//     var new_position = jQuery(jump).offset();
+//     jQuery('html, body').stop().animate({ scrollTop: new_position.top }, 1000);
+//     e.preventDefault();
+// });

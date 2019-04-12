@@ -3,15 +3,6 @@
 <?php get_header(); ?>
 
 <section>
-	<div class="nav-scroll">
-		<a href="#target1" class="scroll_to">Categorias</a>
-		<a href="#target2" class="scroll_to">Medotologia</a>
-		<a href="#target3" class="scroll_to">Curadoria</a>
-		<a href="#target4" class="scroll_to">Resultados</a>
-	</div>
-</section>
-
-<section>
 	<div class="p-relative p-t-100 p-b-100 p-t-c p-b-c">
 		<img class="img-right-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-right-2.png" alt="prêmio compliance" />
 		<div class="container">
