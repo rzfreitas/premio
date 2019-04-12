@@ -51,10 +51,10 @@
 					<div class="col">
 						<div class="box-talk">
 							<div class="d-flex align-c">
-								<div class="">
+								<div>
 									<?php $image1 = get_field('img_talk_1');
 									if( !empty($image1) ): ?>
-										<img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+										<img class="img-circle" src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
 									<?php endif; ?>
 								</div>
 								<div class="m-l-25">
@@ -62,7 +62,7 @@
 									<span class="f-purple"><?php the_field('talk_1'); ?></span>
 								</div>
 							</div>							
-							<?php the_field('desc_talk_1'); ?>
+							<p><?php the_field('desc_talk_1'); ?></p>
 						</div>
 					</div>
 					<div class="col">
@@ -71,7 +71,7 @@
 								<div>
 									<?php $image2 = get_field('img_talk_2');
 									if( !empty($image2) ): ?>
-										<img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+										<img class="img-circle" src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
 									<?php endif; ?>
 								</div>
 								<div class="m-l-25">
@@ -90,13 +90,13 @@
 								<div>
 									<?php $image3 = get_field('img_talk_3');
 									if( !empty($image3) ): ?>
-										<img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
+										<img class="img-circle" src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
 									<?php endif; ?>								
 								</div>
 								<div class="m-l-25">
 									Talk<br>
 									<span class="f-purple"><?php the_field('talk_3'); ?></span>
-									<?php the_field('desc_talk_3'); ?>
+									<p><?php the_field('desc_talk_3'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -107,13 +107,13 @@
 								<div>
 									<?php $image4 = get_field('img_talk_4');
 									if( !empty($image4) ): ?>
-										<img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" />
+										<img class="img-circle" src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" />
 									<?php endif; ?>								
 								</div>
 								<div class="m-l-25">
 									Talk<br>
 									<span class="f-purple"><?php the_field('talk_4'); ?></span>
-									<?php the_field('desc_talk_4'); ?>
+									<p><?php the_field('desc_talk_4'); ?></p>
 								</div>
 							</div>
 						</div>
