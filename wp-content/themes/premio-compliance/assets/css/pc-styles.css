@@ -548,7 +548,6 @@ ul.list-socials{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
     align-items: center;
     text-align: center;
@@ -564,6 +563,7 @@ ul.list-socials li{
     cursor: pointer;
     transition: .3s;
     text-align: center;
+    margin-right: 10px;
 }
 ul.list-socials li:hover{
     background: rgba(0,0,0,.5);

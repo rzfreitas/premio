@@ -149,8 +149,8 @@
 				</div>
 				<div class="col-12 col-md-3 p-t-c">
 					<ul class="list-socials">
-						<li><i class="fa fa-facebook"></i></li>
-						<li><i class="fa fa-instagram"></i></li>
+						<a href="https://www.facebook.com/verdeghaia"><li><i class="fa fa-facebook"></i></li></a>
+						<a href="https://www.instagram.com/verdeghaia"><li><i class="fa fa-instagram"></i></li></a>
 						<!-- <li><i class="fa fa-twitter"></i></li>
 						<li><i class="fa fa-youtube"></i></li> -->
 					</ul>
