@@ -56,3 +56,20 @@ jQuery('.slider').slick({
 //     jQuery('html, body').stop().animate({ scrollTop: new_position.top }, 1000);
 //     e.preventDefault();
 // });
+
+jQuery('.depoimentos-slick').slick({
+  dots: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [   
+    {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true
+    }
+    }
+  ]
+});
