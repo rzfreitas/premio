@@ -151,8 +151,8 @@
 					<ul class="list-socials">
 						<li><i class="fa fa-facebook"></i></li>
 						<li><i class="fa fa-instagram"></i></li>
-						<li><i class="fa fa-twitter"></i></li>
-						<li><i class="fa fa-youtube"></i></li>
+						<!-- <li><i class="fa fa-twitter"></i></li>
+						<li><i class="fa fa-youtube"></i></li> -->
 					</ul>
 				</div>
 			</div>
