@@ -42,7 +42,7 @@
 </section>
 
 <section>
-	<div class="container p-t-100 p-b-100 p-t-c p-b-c">
+	<div class="container p-b-100 p-t-c p-b-c">
 		<h2>PROGRAMAÇÃO</h2>
 		<div class="timeline p-t-50">
 			<div class="timeline-event">O EVENTO</div>
