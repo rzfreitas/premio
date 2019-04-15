@@ -741,7 +741,6 @@ a.btn-vinho{color: #fff;}
     background-image: url('../images/bg-depoimentos.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: calc(60vh);
     background-position: right;
     background-attachment: fixed;
 }
@@ -817,6 +816,7 @@ a.btn-vinho{color: #fff;}
         background: #ffffff;
         display: inline-table!important;
         margin: 0 5px;
+        border: 1px solid #eee;
     }
 
 }
@@ -879,6 +879,7 @@ a.btn-vinho{color: #fff;}
         background: #ffffff;
         color: #333;
         padding: 20px;
+        border: 1px solid #eee;
     }
     .p-t-c{padding-top: 25px}
     .p-b-c{padding-bottom: 25px}
