@@ -692,6 +692,12 @@ ul.list-socials li:hover{
     right: 0;
     height: 600px;
 }
+.img-right-b{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 600px;
+}
 .img-left-3{
     position: absolute;
     bottom: 0;

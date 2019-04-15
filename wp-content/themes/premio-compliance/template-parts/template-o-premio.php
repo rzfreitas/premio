@@ -89,7 +89,7 @@
 				</div>
 			</div>	
 		</div>
-		<img class="img-right-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-right-orange.png" alt="prêmio compliance" />
+		<img class="img-right-b" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-right-orange.png" alt="prêmio compliance" />
 	</div>	
 </section>
 
