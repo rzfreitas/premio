@@ -932,7 +932,7 @@ a.btn-vinho{color: #fff;}
     .bg-vencedores{background-size: cover;}
     .bg-vencedores h1{color: #fff;}
     .col-gallery{margin-bottom: 20px}
-    .bg-map h2{color: #333;}
+    .bg-map h2, .bg-map h3, .bg-map p{color: #333;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
