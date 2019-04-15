@@ -43,7 +43,8 @@
 
 <section>
 	<div class="container p-t-100 p-b-100 p-t-c p-b-c">
-		<div class="timeline">
+		<h2>PROGRAMAÇÃO</h2>
+		<div class="timeline p-t-50">
 			<div class="timeline-event">O EVENTO</div>
 			<div class="timeline-event">19 horas <br> <span class="f-purple">Welcome drink</span></div>
 			<div class="timeline-event">20 horas <br> <span class="f-purple">Compliance Brasil Talks</span>
@@ -124,7 +125,6 @@
 			<div class="timeline-event">21:30 horas <br> <span class="f-purple">Coquetel</span>
 				<p class="p-t-30">Comandado pelo Buffet Rullus, melhor e mais premiado de Minas Gerais</p>
 				<p>Música ao vivo para descontrair, em um ambiente propício para um bom networking, troca de ideias e novas experiências.  </p>
-				<strong><p>Show com a Banda Zero</p></strong>
 			</div>
 			<div class="timeline-event">23:30 horas - <span class="f-purple">Encerramento</span></div>
 		</div>

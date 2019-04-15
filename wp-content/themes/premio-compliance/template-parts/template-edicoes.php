@@ -235,7 +235,7 @@
 					<iframe width="560" height="325" src="https://www.youtube.com/embed/pVCazkkI5BU" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="col-12 col-md-6 p-t-c">
-					<iframe width="560" height="325" src="https://www.youtube.com/embed/pVCazkkI5BU" frameborder="0" allowfullscreen></iframe>
+					<iframe width="680" height="315" src="https://www.youtube.com/embed/N6SrPH6z7xY" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
