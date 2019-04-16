@@ -15,7 +15,7 @@
 					<div></div><div class="capt"><h2>Segurança de Alimentos</h2></div><div></div>				
 					<div></div><div class="capt"><h2>Energia</h2></div><div></div>				
 					<div></div><div class="capt"><h2>Integrado</h2></div><div></div>				
-					<div></div><div class="capt"><h2>Gestão de Fornecedores</h2></div><div></div>
+					<!-- <div></div><div class="capt"><h2>Gestão de Fornecedores</h2></div><div></div> -->
 				</div>
 				<div class="slider">
 					
@@ -150,7 +150,7 @@
 						<?php endwhile; ?>
 					<?php endif; ?>
 
-					<!-- -->
+					<!-- 
 
 					<?php if( have_rows('win_gf') ): ?>
 						<?php while( have_rows('win_gf') ): the_row();
@@ -167,7 +167,7 @@
 								</figure>
 							</div>
 						<?php endwhile; ?>
-					<?php endif; ?>
+					<?php endif; ?> -->
 				</div>
 			</div><!-- box-sliders-round -->
 		</div>		
