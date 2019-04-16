@@ -5,7 +5,7 @@
 				<h2>REALIZAÇÃO</h2>
 				<div class="">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/vg.png" alt="grupo verde ghaia" />
-					<p>Patrocínio Diamante</p>
+					<!-- <p>Patrocínio Diamante</p> -->
 				</div>
 
 				<!-- <div class="">

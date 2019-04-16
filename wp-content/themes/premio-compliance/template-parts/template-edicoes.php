@@ -5,7 +5,7 @@
 <section>
 	<div class="bg-vencedores" id="target1">
 		<div class="container center p-t-100 p-b-100 p-t-c p-b-c">			
-			<h1 class="text-right">Conheça os todos os <br> vencedores do Prêmio <br> Compliance Brasil </h1>
+			<h1 class="text-right">Conheça os vencedores <br> das últimas edições</h1>
 			<div class="box-sliders-round">
 				<div class="caption">
 					<div></div><div class="capt"><h2>Qualidade</h2></div><div></div>		
@@ -232,10 +232,10 @@
 		<div class="container p-t-c">
 			<div class="row p-t-50">
 				<div class="col-12 col-md-6">
-					<iframe width="560" height="325" src="https://www.youtube.com/embed/pVCazkkI5BU" frameborder="0" allowfullscreen></iframe>
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/pVCazkkI5BU" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="col-12 col-md-6 p-t-c">
-					<iframe width="680" height="315" src="https://www.youtube.com/embed/N6SrPH6z7xY" frameborder="0" allowfullscreen></iframe>
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/N6SrPH6z7xY" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>

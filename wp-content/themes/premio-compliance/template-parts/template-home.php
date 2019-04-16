@@ -26,7 +26,7 @@
 <section>
 	<div class="p-relative">
 		<img class="img-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-left.png">
-		<div class="p-relative container p-t-70 p-b-100 p-t-c p-b-c">			
+		<div class="p-relative container p-t-70 p-b-50 p-t-c p-b-c">			
 			<div class="box-opac">
 				<h1><?php the_field('subtitulo_1'); ?></h1>
 				<div>
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 				<div class="row d-flex p-t-50">
-					<div class="col">
+					<div class="col col-md-6">
 						<div class="box-talk">
 							<div class="d-flex align-c">
 								<div>
@@ -102,7 +102,7 @@
 							<p><?php the_field('desc_talk_3'); ?></p>
 						</div>
 					</div>
-					<div class="col">
+					<!-- <div class="col">
 						<div class="box-talk">
 							<div class="d-flex align-c">
 								<div>
@@ -118,7 +118,7 @@
 							</div>
 							<p><?php the_field('desc_talk_4'); ?></p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="timeline-event">21 horas <br> <span class="f-purple">Premiação</span></div>
