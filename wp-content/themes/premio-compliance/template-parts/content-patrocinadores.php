@@ -21,22 +21,28 @@
 				<div>
 					<div class="row">
 						<div class="col">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brtuv.png" alt="brtuv" />			
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/brtuv.png" alt="brtuv" />			
 						</div>
 						<div class="col">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/saint-paul-lit.png" alt="saint-paul lit" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/saint-paul-lit.png" alt="saint-paul lit" />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/renova.png" alt="renova" />
+						</div>
+						<div class="col">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/oksigeno.png" alt="instituto oksigeno" />
+						</div>	
+						<div class="col">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/vg-residuos.png" alt="vg residuos" />
+						</div>
+						<div class="col">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/copygreen.png" alt="copygreen" />
 						</div>
 					</div>
 					<p>Patrocínio Pérola</p>
-				</div>
-
-				<div class="row">
-					<div class="col">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/renova.png" alt="renova" />
-					</div>
-					<div class="col">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/oksigeno.png" alt="instituto oksigeno" />
-					</div>
 				</div>
 
 			</div>
