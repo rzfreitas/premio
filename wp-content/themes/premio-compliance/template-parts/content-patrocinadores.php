@@ -11,14 +11,10 @@
 				<!-- <div class="">
 					
 					<p>Patrocínio Safira</p>
-				</div>
-
-				<div class="">
-					
-					<p>Patrocínio Rubi</p>
 				</div> -->
 
 				<div>
+					<p>Patrocínio Rubi</p>
 					<div class="row">
 						<div class="col">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/brtuv.png" alt="brtuv" />			
@@ -27,7 +23,10 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/saint-paul-lit.png" alt="saint-paul lit" />
 						</div>
 					</div>
+				</div>
 
+				<div>
+					<p>Patrocínio Pérola</p>
 					<div class="row">
 						<div class="col">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/renova.png" alt="renova" />
@@ -42,7 +41,6 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/copygreen.png" alt="copygreen" />
 						</div>
 					</div>
-					<p>Patrocínio Pérola</p>
 				</div>
 
 			</div>

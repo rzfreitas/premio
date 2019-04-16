@@ -232,10 +232,10 @@
 		<div class="container p-t-c">
 			<div class="row p-t-50">
 				<div class="col-12 col-md-6">
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/pVCazkkI5BU" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/pVCazkkI5BU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div class="col-12 col-md-6 p-t-c">
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/N6SrPH6z7xY" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/N6SrPH6z7xY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
