@@ -83,13 +83,6 @@ body{font-family: 'Droid Sans', sans-serif;}
     font-weight: 700;
 }
 
-.center{
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
 .fix-height{
     height: 101px;
 }
@@ -752,18 +745,6 @@ a.btn-vinho{color: #fff;}
 }
 /* / */
 
-/* CONTATO */
-.bg-contato{
-    background-image: url('../images/bg-contato.png');
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-    height: calc(100vh - 100px);
-    background-color: #f2f2f2;
-    background-attachment: fixed;
-}
-/* / */
-
 /* UTILS */
 .p-relative{position: relative;}
 .container{z-index: 50;}
@@ -779,6 +760,61 @@ a.btn-vinho{color: #fff;}
 .align-c{align-items: center;}
 .space-b{justify-content: space-between;}
 .p-l-15{padding-left: 15px;}
+/* / */
+
+/* SLICK LOAD */
+.slider:not(.slick-initialized), .caption:not(.slick-initialized) .capt,
+.slider:not(.slick-initialized), .caption:not(.slick-initialized) .slick-item{
+    display: none;
+}
+.slider:not(.slick-initialized), .caption:not(.slick-initialized){
+    background-color: #FFF;
+    transition: .3s;
+    background-image: url('../css/ajax-loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+/* / */
+
+/* CONTATO */
+.form-contato{
+    width: 400px;
+    margin: auto;
+    background: #E5E5E5;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 80px 40px;
+}
+.form-contato label{
+    color: #767676;
+    font-weight: 600;
+}
+.form-contato input{
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+}
+.form-contato input[type="submit"]{
+    background: #AA0066;
+    color:#fff;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .3s;
+}
+.form-contato input[type="submit"]:hover{
+    background: #7C004B
+}
+.bg-contato{
+    background-image: url('../images/bg-contato.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-color: #f2f2f2;
+    background-attachment: fixed;
+}
 /* / */
 
 /*************************MEDIA QUERY*************************/
@@ -825,53 +861,15 @@ a.btn-vinho{color: #fff;}
         border: 1px solid #eee;
     }
 
-}
+    .center{
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
 
-/* SLICK LOAD */
-.slider:not(.slick-initialized), .caption:not(.slick-initialized) .capt,
-.slider:not(.slick-initialized), .caption:not(.slick-initialized) .slick-item{
-    display: none;
 }
-.slider:not(.slick-initialized), .caption:not(.slick-initialized){
-    background-color: #FFF;
-    transition: .3s;
-    background-image: url('../css/ajax-loader.gif');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70vh;
-}
-/* / */
-
-/* CONTATO */
-.form-contato{
-    width: 400px;
-    margin: auto;
-    background: #E5E5E5;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 24px;
-    padding: 80px 40px;
-}
-.form-contato label{
-    color: #767676;
-    font-weight: 600;
-}
-.form-contato input{
-    display: inline-block;
-    width: 100%;
-    margin-top: 5px;
-}
-.form-contato input[type="submit"]{
-    background: #AA0066;
-    color:#fff;
-    font-weight: 600;
-    font-size: 18px;
-    transition: .3s;
-}
-.form-contato input[type="submit"]:hover{
-    background: #7C004B
-}
-/* / */
 
 /* Retina Display */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {}
@@ -935,10 +933,17 @@ a.btn-vinho{color: #fff;}
     }
     .box-opac{height: auto;}
     .img-right-2{height: auto;}
-    .bg-vencedores{background-size: cover;}
+    .bg-vencedores{
+        background-size: cover;
+        height: auto;
+    }
     .bg-vencedores h1{color: #fff;}
     .col-gallery{margin-bottom: 20px}
     .bg-map h2, .bg-map h3, .bg-map p{color: #333;}
+    .bg-contato{height: auto;}
+    .form-contato{width: auto;}
+    .col-gallery {flex: auto;}
+    .photos img{width: 100%;}
 }
 
 /* Small devices (landscape phones, 576px and up) */

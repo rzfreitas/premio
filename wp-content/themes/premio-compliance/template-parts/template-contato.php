@@ -4,7 +4,7 @@ get_header(); ?>
 
 <section>
 	<div class="bg-contato">
-		<div class="container center">
+		<div class="container p-t-100 p-b-100 p-t-c p-b-c">
 			<div class="row">
 				<div class="col">
 					<h1>CONTATO</h1>
@@ -22,7 +22,7 @@ get_header(); ?>
 					</div>
 					
 				</div>
-				<div class="col">
+				<div class="col p-t-c">
 					<div class="form-contato">						
 						<?php while (have_posts()) : the_post(); ?>
 						    <?php the_content(); ?>

@@ -179,7 +179,7 @@
 	<div class="bg-marinho p-t-70 p-b-70 p-t-c p-b-c" id="target2">
 		<div class="container">
 			<h2 class="h-bordered"><i class="fa fa-camera" aria-hidden="true"></i> Galeria de fotos</h2>
-			<div class="row p-t-50 p-l-15">
+			<div class="row p-t-50 p-l-15 p-t-c">
 								
 				<div class="col-12 col-md-4 col-gallery">					
 					<?php $images = get_field('galeria_3');
