@@ -47,9 +47,45 @@
 		<div class="timeline p-t-50">
 			<div class="timeline-event">O EVENTO</div>
 			<div class="timeline-event">19 horas <br> <span class="f-purple">Welcome drink</span></div>
-			<div class="timeline-event">20 horas <br> <span class="f-purple">Compliance Brasil Talks</span>
+			<div class="timeline-event">20 horas <br> <span class="f-purple">Abertura</span>
 				<div class="row d-flex p-t-50">
-					<div class="col">
+					<div class="col-12 col-md-6">
+						<div class="box-talk">
+							<div class="d-flex align-c">
+								<div>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/talks/vanessa-cochi.png" alt="vanessa cochi">
+								</div>
+								<div class="m-l-25">
+									Apresentação<br>
+									<span class="f-purple">Vanessa Cochi</span>
+								</div>
+							</div>							
+							<p>Jornalista, apresentadora e e mestre de cerimônias, Vanessa Cochi é uma profissional de excelência. É uma das mais requisitadas mestre de cerimônias em eventos corporativos de grandes empresas.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row d-flex p-t-50">
+					<div class="col-12 col-md-6">
+						<div class="box-talk">
+							<div class="d-flex align-c">
+								<div>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/talks/tenor-dom.png" alt="tenor dom">
+								</div>
+								<div class="m-l-25">
+									Apresentação<br>
+									<span class="f-purple">Tenor Dom</span>
+								</div>
+							</div>							
+							<p>Cantor vibrante e autêntico com uma voz que impressiona e emociona. Junto com o irmão, forma a dulpla Don & Juan.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="timeline-event">20:15 horas <br> <span class="f-purple">Compliance Brasil Talks</span>
+				<div class="row p-t-50">
+					<div class="col-12 col-md-6">
 						<div class="box-talk">
 							<div class="d-flex align-c">
 								<div>
@@ -66,7 +102,7 @@
 							<p><?php the_field('desc_talk_1'); ?></p>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-12 col-md-6">
 						<div class="box-talk">
 							<div class="d-flex align-c">
 								<div>
@@ -84,7 +120,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row d-flex p-t-50">
+				<!-- <div class="row d-flex p-t-50">
 					<div class="col col-md-6">
 						<div class="box-talk">
 							<div class="d-flex align-c">
@@ -101,7 +137,7 @@
 							</div>
 							<p><?php the_field('desc_talk_3'); ?></p>
 						</div>
-					</div>
+					</div> -->
 					<!-- <div class="col">
 						<div class="box-talk">
 							<div class="d-flex align-c">
@@ -118,13 +154,31 @@
 							</div>
 							<p><?php the_field('desc_talk_4'); ?></p>
 						</div>
-					</div> -->
-				</div>
+					</div> 
+				</div> -->
 			</div>
-			<div class="timeline-event">21 horas <br> <span class="f-purple">Premiação</span></div>
+			<div class="timeline-event">21 horas <br> <span class="f-purple">Premiação</span>
+				<div class="p-t-30 p-b-30">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/premiacao.png" alt="prêmio compliance brasil 2019">
+				</div>				
+			</div>
 			<div class="timeline-event">21:30 horas <br> <span class="f-purple">Coquetel</span>
 				<p class="p-t-30">Comandado pelo Buffet Rullus, melhor e mais premiado de Minas Gerais</p>
-				<p>Música ao vivo para descontrair, em um ambiente propício para um bom networking, troca de ideias e novas experiências.  </p>
+				<p>Música ao vivo para descontrair, em um ambiente propício para um bom networking, troca de ideias e novas experiências.</p><br>
+
+				<div class="box-talk">
+					<div class="row align-c">
+						<div class="col-12 col-md-6">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Arnaldo-Brandao-Hanoi-Hanoi.png" alt="Arnaldo Brandão e Hanoi-Hanoi">
+						</div>
+						<div class="col-12 col-md-6 m-l-25">
+							Show<br>
+							<span class="f-purple">Arnaldo Brandão e Hanoi-Hanoi</span>
+							<p>Arnaldo Brandão, multinstrumentista, um dos maiores precursores do Rock no Brasil, realizará um super show exclusivo para os convidados do Prêmio Compliance Brasil. Além de tocar e gravar com Raul Seixas, Gal Costa, Luiz Melodia, Jorge Mautner, Jorge Ben, Doces Bárbaros e etc, Brandão também fundou a banda Hanoi-Hanoi, que fará companhia para ele nesta apresentação. Aproveite para curtir os sucessos "Totalmente Demais", "Rádio Blabla" e "O Tempo Não Pára".</p>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<div class="timeline-event">23:30 horas - <span class="f-purple">Encerramento</span></div>
 		</div>

@@ -610,6 +610,17 @@ ul.list-socials li:hover{
     color: #767676;
     border-top: 1px solid #000000;
 }
+.patrocinio-logos{
+    width: 100%;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.patrocinio-logos div{margin-right: 80px;}
+.patrocinio-logos div:last-child{margin-right: 0px;}
 /* / */
 
 /* TIMELINE */
@@ -752,7 +763,7 @@ a.btn-vinho{color: #fff;}
 .m-auto{margin: auto;}
 .img-circle{border-radius: 100%;}
 .m-r-25{margin-right: 25px;}
-.m-l-25{margin-left: 25px;}
+
 .d-flex{display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -938,12 +949,19 @@ a.btn-vinho{color: #fff;}
         height: auto;
     }
     .bg-vencedores h1{color: #fff;}
-    .col-gallery{margin-bottom: 20px}
+    .col-gallery{
+        margin-bottom: 20px;
+        flex: initial;
+    }
     .bg-map h2, .bg-map h3, .bg-map p{color: #333;}
     .bg-contato{height: auto;}
     .form-contato{width: auto;}
-    .col-gallery {flex: auto;}
     .photos img{width: 100%;}
+    .box-w-round, .box-talk{padding: 20px;}
+    .patrocinio-logos div{
+        width: 50%;
+        margin-right: 0
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -960,6 +978,7 @@ a.btn-vinho{color: #fff;}
    .box-logo{
         width: 700px;
     }
+    .m-l-25{margin-left: 25px;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

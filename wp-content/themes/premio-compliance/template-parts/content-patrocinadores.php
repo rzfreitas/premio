@@ -27,17 +27,17 @@
 
 				<div>
 					<p>Patrocínio Pérola</p>
-					<div class="row">
-						<div class="col">
+					<div class="row patrocinio-logos">
+						<div>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/renova.png" alt="renova" />
 						</div>
-						<div class="col">
+						<div>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/oksigeno.png" alt="instituto oksigeno" />
 						</div>	
-						<div class="col">
+						<div>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/vg-residuos.png" alt="vg residuos" />
 						</div>
-						<div class="col">
+						<div>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/copygreen.png" alt="copygreen" />
 						</div>
 					</div>
