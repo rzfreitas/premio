@@ -74,7 +74,7 @@
 								</div>
 								<div class="m-l-25">
 									Apresentação<br>
-									<span class="f-purple">Tenor Dom</span>
+									<span class="f-purple">Dom</span>
 								</div>
 							</div>							
 							<p>Cantor vibrante e autêntico com uma voz que impressiona e emociona. Junto com o irmão, forma a dulpla Don & Juan.</p>
