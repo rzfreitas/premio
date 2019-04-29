@@ -962,6 +962,9 @@ a.btn-vinho{color: #fff;}
         width: 50%;
         margin-right: 0
     }
+    .fix-height, .menu-top{height: 70px;}
+    .banner-home{height: calc(100vh - 70px);}
+    .timeline-event{padding-left: 20px;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
