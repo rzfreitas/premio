@@ -171,7 +171,7 @@
 						<div class="col-12 col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Arnaldo-Brandao-Hanoi-Hanoi.png" alt="Arnaldo Brandão e Hanoi-Hanoi">
 						</div>
-						<div class="col-12 col-md-6 m-l-25">
+						<div class="col-12 col-md-6">
 							Show<br>
 							<span class="f-purple">Arnaldo Brandão e Hanoi-Hanoi</span>
 							<p>Arnaldo Brandão, multinstrumentista, um dos maiores precursores do Rock no Brasil, realizará um super show exclusivo para os convidados do Prêmio Compliance Brasil. Além de tocar e gravar com Raul Seixas, Gal Costa, Luiz Melodia, Jorge Mautner, Jorge Ben, Doces Bárbaros e etc, Brandão também fundou a banda Hanoi-Hanoi, que fará companhia para ele nesta apresentação. Aproveite para curtir os sucessos "Totalmente Demais", "Rádio Blabla" e "O Tempo Não Pára".</p>
