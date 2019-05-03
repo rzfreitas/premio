@@ -603,12 +603,11 @@ ul.list-socials li:hover{
     color: #333;
 }
 .box-w-round img{
-    padding: 50px 0;
+    padding: 25px 0;
 }
-.box-w-round p{
-    padding: 18px 0;
+.box-w-round h2 {
     color: #767676;
-    border-top: 1px solid #000000;
+    font-size: 32px;
 }
 .patrocinio-logos{
     width: 100%;
@@ -661,7 +660,7 @@ ul.list-socials li:hover{
     border: 2px solid #8C2F85;
     box-sizing: border-box;
     border-radius: 40px;
-    padding: 40px;
+    padding: 25px;
     position: relative;
     height: 100%;
 }
@@ -716,16 +715,16 @@ ul.list-socials li:hover{
 }
 .btn-vinho{
     display: inline-block;
-    background: rgb(170,0,102);
+    background: #8C2F85;
     border-radius: 40px;
     cursor: pointer;
     text-transform: uppercase;
-    padding: 8px 20px;
+    padding: 10px 30px;
     font-weight: bold;
     transition: .3s;
 }
 .btn-vinho:hover{
-    background: rgba(170,0,102,.5);
+    background: #662361;
 }
 a.btn-vinho{color: #fff;}
 .btn-vinho:hover a, a.btn-vinho:hover{text-decoration: none;}

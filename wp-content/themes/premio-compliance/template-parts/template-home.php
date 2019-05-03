@@ -28,12 +28,15 @@
 		<img class="img-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-left.png">
 		<div class="p-relative container p-t-70 p-b-50 p-t-c p-b-c">			
 			<div class="box-opac">
-				<h1><?php the_field('subtitulo_1'); ?></h1>
+				<h1 class="text-center"><?php the_field('subtitulo_1'); ?></h1>
 				<div>
 					<span class="f-cinza"><?php the_field('conteudo_1'); ?></span>
 				</div>				
 				<div class="p-t-30 text-center">
 					<?php the_field('video_1'); ?>
+				</div>
+				<div class="p-t-50 text-center">
+					 <a href="" class="btn-vinho">CONHEÇA OS FINALISTAS  DO IV PRÊMIO</a>
 				</div>
 			</div>
 		</div>
@@ -46,8 +49,8 @@
 		<h2>PROGRAMAÇÃO</h2>
 		<div class="timeline p-t-50">
 			<div class="timeline-event">O EVENTO</div>
-			<div class="timeline-event">19 horas <br> <span class="f-purple">Welcome drink</span></div>
-			<div class="timeline-event">20 horas <br> <span class="f-purple">Abertura</span>
+			<div class="timeline-event">18 horas <br> <span class="f-purple">Welcome drink</span></div>
+			<div class="timeline-event">19 horas <br> <span class="f-purple">Abertura</span>
 				<div class="row d-flex p-t-50">
 					<div class="col-12 col-md-6">
 						<div class="box-talk">
@@ -56,7 +59,7 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/talks/vanessa-cochi.png" alt="vanessa cochi">
 								</div>
 								<div class="m-l-25">
-									Apresentação<br>
+									Mestre de cerimônia<br>
 									<span class="f-purple">Vanessa Cochi</span>
 								</div>
 							</div>							
@@ -73,7 +76,7 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/talks/tenor-dom.png" alt="tenor dom">
 								</div>
 								<div class="m-l-25">
-									Apresentação<br>
+									Participação especial<br>
 									<span class="f-purple">Dom</span>
 								</div>
 							</div>							
@@ -83,11 +86,62 @@
 				</div>
 
 			</div>
-			<div class="timeline-event">20:15 horas <br> <span class="f-purple">Compliance Brasil Talks</span>
+
+			<div class="timeline-event">19h25 horas <br> <span class="f-purple">Palestra Inovação Disruptiva</span>
 				<div class="row p-t-50">
 					<div class="col-12 col-md-6">
 						<div class="box-talk">
 							<div class="d-flex align-c">
+								<div>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/talks/Jose-Claudio-Securato.png" alt="José Claudio Securato">
+								</div>
+								<div class="m-l-25">
+									Talk<br>
+									<span class="f-purple">José Cláudio Securato</span>
+								</div>
+							</div>							
+							<p>Sócio, presidente e professor da Saint Paul Escola de Negócios, Diretor da Faculdade de Tecnologia Saint Paul. Atua principalmente temas: economia brasileira, mercado financeiro e governança corporativa.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-event">20 horas <br> <span class="f-purple">Talk Gestão de riscos</span>
+				<div class="row d-flex p-t-50">
+					<div class="col-12 col-md-4">
+						<div class="box-talk">
+							<div class="text-center">
+								<div>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/talks/Daniela_pedroza.png" alt="Daniela pedroza">
+								</div>
+								<div class="m-l-25">
+									<span class="f-purple">Daniela Pedroza</span>
+								</div>
+							</div>							
+							<p>Diretora Técnica da Verde Ghaia. Auditora Líder ISO 14001, ISO 22000, OHSAS 18001, ISO 9001. Graduada em Engenharia Ambiental, com especialização em Negócios e Engenharia de Segurança do Trabalho.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="box-talk">
+							<div class="text-center">
+								<div>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/talks/Carlos-Pitanga.png" alt="Carlos Pitanga">
+								</div>
+								<div class="m-l-25">
+									<span class="f-purple">Carlos Pitanga</span>
+								</div>
+							</div>							
+							<p>COO Assurance, Americas na  BSI. Desenvolve organizações, fornecendo soluções de negócios. Atua nas áreas de , Governança, Risco e Compliance, Sistemas de Gestão e Serviços de Avaliação de Produtos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-event">20:20 horas <br> <span class="f-purple">Compliance Brasil Talks</span>
+				<div class="row p-t-50">
+					<div class="col-12 col-md-4">
+						<div class="box-talk">
+							<div class="text-center">
 								<div>
 									<?php $image1 = get_field('img_talk_1');
 									if( !empty($image1) ): ?>
@@ -95,16 +149,15 @@
 									<?php endif; ?>
 								</div>
 								<div class="m-l-25">
-									Talk<br>
 									<span class="f-purple"><?php the_field('talk_1'); ?></span>
 								</div>
 							</div>							
 							<p><?php the_field('desc_talk_1'); ?></p>
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-4">
 						<div class="box-talk">
-							<div class="d-flex align-c">
+							<div class="text-center">
 								<div>
 									<?php $image2 = get_field('img_talk_2');
 									if( !empty($image2) ): ?>
@@ -112,18 +165,15 @@
 									<?php endif; ?>
 								</div>
 								<div class="m-l-25">
-									Talk<br>
 									<span class="f-purple"><?php the_field('talk_2'); ?></span>
 								</div>
 							</div>
 							<p><?php the_field('desc_talk_2'); ?></p>
 						</div>
 					</div>
-				</div>
-				<!-- <div class="row d-flex p-t-50">
-					<div class="col col-md-6">
+					<div class="col col-md-4">
 						<div class="box-talk">
-							<div class="d-flex align-c">
+							<div class="text-center">
 								<div>
 									<?php $image3 = get_field('img_talk_3');
 									if( !empty($image3) ): ?>
@@ -131,30 +181,30 @@
 									<?php endif; ?>								
 								</div>
 								<div class="m-l-25">
-									Talk<br>
 									<span class="f-purple"><?php the_field('talk_3'); ?></span>
 								</div>
 							</div>
 							<p><?php the_field('desc_talk_3'); ?></p>
 						</div>
-					</div> -->
-					<!-- <div class="col">
-						<div class="box-talk">
-							<div class="d-flex align-c">
-								<div>
-									<?php $image4 = get_field('img_talk_4');
-									if( !empty($image4) ): ?>
-										<img class="img-circle" src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" />
-									<?php endif; ?>								
-								</div>
-								<div class="m-l-25">
-									Talk<br>
-									<span class="f-purple"><?php the_field('talk_4'); ?></span>
-								</div>
+					</div>
+				</div>				
+					
+				<!-- <div class="col">
+					<div class="box-talk">
+						<div class="d-flex align-c">
+							<div>
+								<?php $image4 = get_field('img_talk_4');
+								if( !empty($image4) ): ?>
+									<img class="img-circle" src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" />
+								<?php endif; ?>								
 							</div>
-							<p><?php the_field('desc_talk_4'); ?></p>
+							<div class="m-l-25">
+								Talk<br>
+								<span class="f-purple"><?php the_field('talk_4'); ?></span>
+							</div>
 						</div>
-					</div> 
+						<p><?php the_field('desc_talk_4'); ?></p>
+					</div>
 				</div> -->
 			</div>
 			<div class="timeline-event">21 horas <br> <span class="f-purple">Premiação</span>
