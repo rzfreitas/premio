@@ -620,6 +620,7 @@ ul.list-socials li:hover{
 }
 .patrocinio-logos div{margin-right: 80px;}
 .patrocinio-logos div:last-child{margin-right: 0px;}
+.border-b{border-bottom: 1px solid #dcdcdc;}
 /* / */
 
 /* TIMELINE */
