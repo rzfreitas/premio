@@ -9,11 +9,11 @@
 
 				<div>
 					<h2>Patrocinadores</h2>
-					<div class="row border-b">
-						<div class="col-12 p-t-50">
+					<div class="row align-c border-b">
+						<div class="col-12 col-md-6 p-t-50">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/brtuv.png" alt="brtuv" />			
 						</div>
-						<div class="col-12 p-b-50 p-t-50">
+						<div class="col-12 col-md-6 p-t-50">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/patrocinio/saint-paul-lit.png" alt="saint-paul lit" />
 						</div>
 					</div>

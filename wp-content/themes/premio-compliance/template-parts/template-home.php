@@ -36,7 +36,7 @@
 					<?php the_field('video_1'); ?>
 				</div>
 				<div class="p-t-50 text-center">
-					 <a href="" class="btn-vinho">CONHEÇA OS FINALISTAS  DO IV PRÊMIO</a>
+					 <a href="https://normaiso.verdeghaia.com.br/arquivo-finalistas-iv-premio" class="btn-vinho">CONHEÇA OS FINALISTAS  DO IV PRÊMIO</a>
 				</div>
 			</div>
 		</div>
@@ -66,9 +66,7 @@
 							<p>Jornalista, apresentadora e e mestre de cerimônias, Vanessa Cochi é uma profissional de excelência. É uma das mais requisitadas mestre de cerimônias em eventos corporativos de grandes empresas.</p>
 						</div>
 					</div>
-				</div>
 
-				<div class="row d-flex p-t-50">
 					<div class="col-12 col-md-6">
 						<div class="box-talk">
 							<div class="d-flex align-c">
